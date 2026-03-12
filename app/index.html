@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My Resume</title>
+<style>
+    body {
+        font-family: Arial, Helvetica, sans-serif;
+        background: linear-gradient(135deg, #74ebd5, #ACB6E5);
+        margin: 0;
+        padding: 0;
+        animation: fadeIn 1.5s ease-in-out;
+    }
+
+    @keyframes fadeIn {
+        from { opacity: 0; }
+        to { opacity: 1; }
+    }
+
+    .container {
+        width: 900px;
+        margin: 30px auto;
+        background: white;
+        padding: 25px;
+        box-shadow: 0px 0px 20px rgba(0,0,0,0.3);
+        border-radius: 15px;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .container:hover {
+        transform: scale(1.01);
+        box-shadow: 0px 0px 30px rgba(0,0,0,0.4);
+    }
+
+    .header {
+        display: flex;
+        align-items: center;
+        border-bottom: 3px solid #2c3e50;
+        padding-bottom: 15px;
+        margin-bottom: 20px;
+        animation: slideDown 1s ease-in-out;
+    }
+
+    @keyframes slideDown {
+        from { transform: translateY(-30px); opacity: 0; }
+        to { transform: translateY(0); opacity: 1; }
+    }
+
+    .photo {
+        width: 140px;
+        height: 170px;
+        border: 3px solid #2c3e50;
+        border-radius: 10px;
+        object-fit: cover;
+        margin-right: 25px;
+        transition: transform 0.4s ease;
+    }
+
+    .photo:hover {
+        transform: rotate(3deg) scale(1.05);
+    }
+
+    .name {
+        font-size: 32px;
+        color: #2c3e50;
+        margin: 0;
+    }
+
+    .title {
+        color: #555;
+        margin-top: 5px;
+    }
+
+    h2 {
+        background: #2c3e50;
+        color: white;
+        padding: 6px 10px;
+        border-radius: 6px;
+        font-size: 20px;
+        transition: background 0.3s ease;
+    }
+
+    h2:hover {
+        background: #1abc9c;
+    }
+
+    ul {
+        padding-left: 20px;
+    }
+
+    li {
+        margin-bottom: 8px;
+        transition: transform 0.3s ease;
+    }
+
+    li:hover {
+        transform: translateX(8px);
+        color: #1abc9c;
+    }
+
+    .info p {
+        margin: 5px 0;
+    }
+
+    .two-col {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 25px;
+    }
+
+    .project-card {
+        background: #f9f9f9;
+        padding: 15px;
+        border-radius: 10px;
+        margin-bottom: 15px;
+        box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .project-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+    }
+
+</style>
+</head>
+<body>
+
+<div class="container">
+
+<div class="header">
+    <img src="photo.jpeg" alt="Passport Photo" class="photo">
+    <div>
+        <h1 class="name">Sumit Saggar</h1>
+        <p class="title"> Full Stack Developer / Student</p>
+        <div class="info">
+            <p>Email: sumitsaggar9604@gmail.com</p>
+            <p>Phone: 9871334662</p>
+            <p>Address: Delhi, India</p>
+            <p>
+        GitHub: 
+        <a href="https://github.com/Ssaggar123" target="_blank">
+            github.com/Ssaggar123
+        </a>
+    </p>
+
+    <p>
+        LeetCode: 
+        <a href="https://leetcode.com/Sumitsaggar964" target="_blank">
+            leetcode.com/Sumitsaggar964
+        </a>
+    </p>
+        </div>
+    </div>
+</div>
+
+<h2>Career Objective</h2>
+<p>To obtain a challenging position where I can utilize my technical skills and grow professionally.</p>
+
+<div class="two-col">
+    <div>
+        <h2>Education</h2>
+        <ul>
+            <li>MCA  - Vivekananda Institute of Proffesional Studies(VIPS - TC) (2025-2027)</li>
+            <li>BSC  - Sri Aurobindo College, University of Delhi(2022 - 2025)</li>
+            <li>12th - GSBV Laxmi Nagar (Delhi -110092) (2021 - 2022) </li>
+            <li>10th - GSBV Laxmi Nagar (Delhi - 110092) (2019 - 2020) </li>
+        </ul>
+    </div>
+
+    <div>
+        <h2>Skills</h2>
+        <ul>
+            <li>Node(JS), html, css</li>
+            <li>C, Java</li>
+            <li>Python</li>
+            <li>MS Office</li>
+        </ul>
+    </div>
+</div>
+
+<h2>Projects</h2>
+
+<div class="project-card">
+    <h3>Your Fitness Buddy</h3>
+    <p><strong>Your Fitness Buddy</strong> is a personalized fitness-monitoring application designed to help users stay motivated, maintain a healthy lifestyle, and track their daily physical activities. The system provides intelligent workout recommendations, real-time activity insights, calorie tracking, and interactive dashboards that enable users to analyze their fitness performance and understand their progress over time. It enhances user engagement through goal tracking, progress analytics, and performance visualization.</p>
+    <p>
+        <a href="https://github.com/AyushVerma2004/Minor_Project_MCA1st_Sem" target="_blank">
+            View Project on GitHub
+        </a>
+    </p>
+</div>
+
+<div class="project-card">
+    <h3>Portfolio Website</h3>
+    <p>A responsive personal portfolio website developed using HTML, CSS, and JavaScript to showcase skills, academic background, and project work with clean UI design and interactive elements.</p>
+    <p>
+      <a href ="https://github.com/Ssaggar123/sumit-portfolio" target = "_blank">
+        
+      </a>
+    </p>
+    
+</div>
+
+<h2>Strengths</h2>
+<ul>
+    <li>Quick Learner</li>
+    <li>Team Player</li>
+    <li>Problem Solving Ability</li>
+</ul>
+
+<h2>Hobbies</h2>
+<ul>
+    <li>Reading Books</li>
+    <li>Coding</li>
+    <li>Playing Cricket</li>
+    <li>Listening Music</li>
+</ul>
+
+<h2>Declaration</h2>
+<p>I hereby declare that the information provided above is true to the best of my knowledge.</p>
+
+</div>
+
+</body>
+</html>
